@@ -1,0 +1,62 @@
+PITTON Olivier n°2800439 - Groupe 4
+
+1°) Conventions
+
+Tous les fichiers représentant du code, des binaires ou des bibliothèques (*.c, *.h, *.o, ...) sont sous la forme exo[X] où X est le numéro de l'exercice.
+Exemple : exo1.c
+
+Si un exercice stipule deux manipulations de code, alors il existe deux versions sous le format exo[X]-[Y]
+où X est le numéro de l'exercice et Y la partie de l'exercice. 
+
+Pour chaque exercice nécessitant du code, un header et un fichier source sont inclus, respectant les précédentes conventions, sauf pour certains exercices.
+
+2°) Descriptions du contenu des répertoires
+
+include/ : Le dossier contient toutes les en-têtes de fichiers sources (*.h) pour chaque exercice.
+  ftpclient : Header de l'exercice 1 côté client.
+  ftpserver : Header de l'exercice 1 côté serveur.
+  mychat : Header de l'exercice 2 côté client / serveur.
+  ponger : Header de l'exercice 3.
+  sonar : Header de l'exercice 3.  
+  connectserver : Header de l'exercice 3 côté serveur.  
+
+src/ : Le dossier contient tous les fichiers sources (*.c) pour chaque exercice.
+  ftpclient : Source de l'exercice 1 côté client.
+  ftpserver : Source de l'exercice 1 côté serveur.
+  mychat : Source de l'exercice 2 côté client / serveur.
+  ponger : Source de l'exercice 3.
+  sonar : Source de l'exercice 3.  
+  connectserver : Source de l'exercice 4 côté serveur.  
+  connectclient : Source de l'exercice 4 côté client.  
+  
+3°) Directives du makefile
+
+Afin d'utiliser pleinement les possibilités vues en cours pour la réalisation d'un makefile, celui-ci a été enrichi avec des variables internes et personnalisées.
+
+Le makefile définit quatre variables personnalisées :
+  
+  CC -> La commande représentant le compilateur utilisé (ici gcc).
+  CFLAGS -> Les arguments à spécifier au compilateur de manière permanente
+  ALL -> La liste de toutes les cibles, permettant de faire la compilation et l'édition de lien de tout le TME.
+  OBJ -> Une simple variable pour factoriser les appels aux fichiers objets.  
+  
+Les cibles sont les suivantes :
+
+  all -> Lance la compilation de tout le TME.
+  clean -> Nettoie les fichiers exécutables et fichiers objets.
+  ftpclient -> Compile l'exercice dans le dossier obj/ et copie le fichier objet dans le dossier bin/
+  ftpserver -> Compile l'exercice dans le dossier obj/ et copie le fichier objet dans le dossier bin/
+  mychat -> Compile l'exercice dans le dossier obj/ et copie le fichier objet dans le dossier bin/
+  ponger -> Compile l'exercice dans le dossier obj/ et copie le fichier objet dans le dossier bin/
+  sonar -> Compile l'exercice dans le dossier obj/ et copie le fichier objet dans le dossier bin/
+  connectclient -> Compile l'exercice dans le dossier obj/ et copie le fichier objet dans le dossier bin/
+  connectserver -> Compile l'exercice dans le dossier obj/ et copie le fichier objet dans le dossier bin/
+  
+Toutes les directives des autres exercices sont identiques puisqu'il s'agit toujours d'un fichier source et de son en-tête.
+Lors de l'appel au compilateur, le fichier objet généré est copié et renommé dans le dossier bin/, puisqu'il s'agit bel et bien de l'exécutable.
+
+Enfin, toutes les directives affichent un message au lancement et à la fin de celles-ci.
+
+4°) Etat d'avancement des exercices
+
+Tous les exercices sont terminés. Quelques bugs sont néanmoins présents dans l'exercice 1 et dans l'exercice 2.

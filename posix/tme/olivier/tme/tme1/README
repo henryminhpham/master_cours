@@ -1,0 +1,151 @@
+PITTON Olivier n°2800439 - Groupe 4
+
+1°) Conventions
+
+Tous les fichiers représentant du code, des binaires ou des bibliothèques (*.c, *.h, *.o, ...) sont sous la forme exo[X] où X est le numéro de l'exercice.
+Exemple : exo5.c
+
+Si un exercice stipule deux manipulations de code (comme l'exercice 4), alors il existe deux versions sous le format exo[X]-[Y]
+où X est le numéro de l'exercice et Y la partie de l'exercice. 
+Exemple : exo4-1.c et exo4-2.c
+
+Pour chaque exercice nécessitant du code, un header et un fichier source sont inclus, respectant les précédentes conventions, hormis pour :
+  L'exercice 1 ne respecte pas cette convention, l'énoncé stipulant des noms précis de fichiers (max_func et max_calcul).
+  L'exercice 3, puisque le code fourni dans l'énoncé est dans un main.
+
+2°) Descriptions du contenu des répertoires
+
+include/ : Le dossier contient toutes les en-têtes de fichiers sources (*.h) pour chaque exercice.
+  exo2 : Header de l'exercice 2.
+  exo4-1 : Header de l'exercice 4, première partie.
+  exo4-2 : Header de l'exercice 4, seconde partie.
+  exo5 : Header de l'exercice 5.
+  exo6 : Header de l'exercice 6.
+  exo7 : Header de l'exercice 7.
+  max_func : Header de l'exercice 1. Le nom est stipulé dans l'énoncé.
+
+
+src/ : Le dossier contient tous les fichiers sources (*.c) pour chaque exercice.
+  exo2 : Source de l'exercice 2 (nfork)
+  exo3-1 : Source de l'exercice 3, première partie (execl).
+  exo3-2 : Source de l'exercice 4, seconde partie (execv).
+  exo4-1 : Source de l'exercice 4, première partie.
+  exo4-2 : Source de l'exercice 4, seconde partie (en ajoutant le random).
+  exo5 : Source de l'exercice 5.
+  exo6 : Source de l'exercice 6.
+  exo7 : Source de l'exercice 7.
+  max_calcul : Source de l'exercice 1, contenant le code de la fonction calculant le maximum.
+  max_func : Source de l'exercice contenant le main du programme.
+  
+lib/ : Contient les *.a générés pour chaque fichier source. Ne sachant pas si la génération des *.a était obligatoire ou si ce dossier servirait
+ultérieurement, je les génère quand même.
+
+3°) Directives du makefile
+
+Afin d'utiliser pleinement les possibilités vues en cours pour la réalisation d'un makefile, celui-ci a été enrichi avec des variables internes et personnalisées.
+
+Le makefile définit cinq variables personnalisées :
+  
+  CC -> La commande représentant le compilateur utilisé (ici gcc).
+  CFLAGS -> Les arguments à spécifier au compilateur de manière permanente
+  ALL -> La liste de toutes les cibles, permettant de faire la compilation et l'édition de lien de tout le TME.
+  LIB -> La commande générique pour créer un fichier *.a depuis un fichier *.o
+  OBJ -> Une simple variable pour factoriser les appels aux fichiers objets.  
+  
+Les cibles sont les suivantes :
+
+  all -> Lance la compilation de tout le TME.
+  clean -> Nettoie les fichiers exécutables et fichiers objets.
+  exo2 -> Compile l'exercice dans le dossier obj/ et copie le fichier objet dans le dossier bin/
+  exo3-1 -> Compile l'exercice dans le dossier obj/ et copie le fichier objet dans le dossier bin/
+  exo3-2 -> Compile l'exercice dans le dossier obj/ et copie le fichier objet dans le dossier bin/
+  exo4-1 -> Compile l'exercice dans le dossier obj/ et copie le fichier objet dans le dossier bin/
+  exo4-2 -> Compile l'exercice dans le dossier obj/ et copie le fichier objet dans le dossier bin/
+  exo5 -> Compile l'exercice dans le dossier obj/ et copie le fichier objet dans le dossier bin/
+  exo6 -> Compile l'exercice dans le dossier obj/ et copie le fichier objet dans le dossier bin/
+  exo7 -> Compile l'exercice dans le dossier obj/ et copie le fichier objet dans le dossier bin/
+  max_func.o -> Compile le fichier max_func.c de l'exercice 1 en omettant l'édition de lien. Le fichier généré est placé dans obj/
+  max_calcul.o -> Compile le fichier max_calcul.c de l'exercice 1 en omettant l'édition de lien. Le fichier généré est placé dans obj/
+  max_calcul -> Génère l'exécutable de l'exercice 1, nommé max_calcul, en utilisant les fichiers objets max_calcul.o et max_func.o obtenus grâce aux cibles de même nom.
+  
+Hormis pour l'exercice 1, toutes les directives des autres exercices sont identiques puisqu'il s'agit toujours d'un fichier source et de son en-tête.
+Lors de l'appel au compilateur, le fichier objet généré est copié et renommé dans le dossier bin/, puisqu'il s'agit bel et bien de l'exécutable.
+
+Enfin, toutes les directives affichent un message au lancement et à la fin de celles-ci.
+
+4°) Etat d'avancement des exercices
+
+L'exercice 7 sera détaillé ci-dessous. Hormis ce-dernier, tous les exercices ont été réalisés et sont fonctionnels. Certains blindages de code n'ont pas été fait afin de rendre le code plus lisible (vérifier le -1 lors d'un fork(), ...).
+
+L'exercice 7 fonctionne mais n'est pas propre et pourrait être mieux réalisé.
+
+Les choses à améliorer pour l'exercice 7 sont :
+ - Chaque processus se stoppe lui-même. Donc le dernier doit notifier le père que tout le monde est stoppé, alors qu'il ne l'ait pas. Ainsi, lorsque le 
+   père reçoit le signal, il se met en sleep pour "s'assurer" que le dernier fils est le temps de se stopper. Cette approche n'est pas propre puisque rien
+   ne nous assure que, malgré le sleep, le père ne pourrait pas reprendre la main avant la fils, théoriquement.
+ - L'exercice 4 stipulait que les affichages à réaliser allaient du dernier au premier. Dans mon cas, ils vont du premier au dernier. Dans l'exercice 4,
+   le wait permet d'être sur que le fils est mort pour "remonter et afficher". Dans cet exercice puisque le père réveille le fils, il affiche avant (on descend au lieu de remonter).
+ - Le titre de l'exercice stipule "SIGCHLD" or je ne me suis pas servi de ce signal.
+
+5°) Résultat des exercices 2 et 3
+
+5.1°) Exercice 2 : N processus fils
+
+9 processus sont créés par le processus initial, soit 10 processus au total.
+
+ Représentation 1 :
+
+                            1 - FIN
+                               |
+                               |
+                            2 - FIN
+                           /       \
+                          /         \   
+                   3 - FIN          3 - FIN
+                   /  |  \          /  |  \
+                  /   |   \        /   |   \
+               FIN   FIN  FIN     FIN FIN  FIN
+
+ Représentation 2 :
+ 
+(processus initial) - "1" et "FIN"
+  (fils) - "2" et "FIN"
+    (petit-fils) - "3" et "FIN"
+      (arrière-petit-fils) - "FIN"
+      (arrière-petit-fils) - "FIN"
+      (arrière-petit-fils) - "FIN"
+    (petit-fils) - "3" et "FIN"
+      (arrière-petit-fils) - "FIN"
+      (arrière-petit-fils) - "FIN"
+      (arrière-petit-fils) - "FIN"
+
+5.2°) Exercice 3 : Fonction exec
+
+ 1°)
+
+ 3 processus sont créés, en plus du processus initial. Ce-dernier a 2 fils, et son premier fils en a un autre.
+
+  Représentation 1 :
+ 
+              2 fils
+               /  \
+              /    \
+           1 fils  sans fils
+             |
+             |
+          sans fils
+
+  Représentation 2 :
+	  
+      (père) - 2 fils 
+	(premier fils) - 1 fils 
+	  (petit-fils) - sans fils 
+	(second fils) - sans fils 
+      
+      
+    
+  2°) 3 processus sont toujours créés, mais l'affichage des derniers fils (des "feuilles" si l'on considère comme un arbre l'affichage précédent) ne 		    s'effectue pas. En effet, puisque la famille des méthodes exec remplace le code du processus, si l'appel réussit alors l'affichage "sans fils" 
+      n'existe plus. En revanche si l'appel devait échouer, ceux-ci afficheraient "sans fils".
+      
+  3°) Toutes les méthodes de la famille exec font appel à la primitive execve, donc cela revient au même d'utiliser execl ou execv. La réponse est identique
+      à la question précédente.

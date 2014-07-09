@@ -1,0 +1,38 @@
+﻿UC01 : Résoudre sudoku
+Auteur : Thaneshe.T , Kevin.B; Version 1.0; Date 10/10/2013
+Acteur : Joueur
+Description : Procédure qui permet de résoudre un sudoku.
+Precondition : Aucun
+Scénario Nominal :
+SN1 : Le système affiche les différent niveaux de difficulté.
+SN2 : Le joueur choisi un niveau de difficulté.
+SN3 : Le joueur valide.
+SN4 : Le système génère une grille et initialise le timer.
+SN5 : Le système affiche la grille et le timer.
+SN6 : Le joueur sélectionne une case.
+SN7 : Le joueur rentre un chiffre dans la case.
+SN8 : Le système valide le contenu de la cellule.
+SN9 : Le système contrôle que la grille est terminée.
+SN10 : Le système contrôle la validité de la grille.
+SN11 : Le système affiche une notification contenant le score du joueur et un bouton de retour.
+SN12 : Le système contrôle si le score est le meilleur score du joueur.
+SN13 : Le système enregistre le nouveau score du joueur en tant que meilleur score.
+SN14 : Le joueur clic sur retour.
+SN15 : Le système retourne au menu principal.
+Alternative :
+	A1 : La difficulté est « Intermédiaire ». A partir de SN7 :
+		A1.2 : Le système vérifie la validité de la saisie.
+		A1.3 : Le système affiche en rouge si la saisie est fausse. 
+		Reprise au SN8.
+	A2 : La difficulté est « Facile ». A partir de SN6 : 
+		A2.1 : Le système affiche les différente valeur possible au vu du reste de la grille.
+		A1.2 : Le système vérifie la validité de la saisie.
+		A1.3 : Le système affiche en rouge si la saisie est fausse.
+		Reprise au SN8.
+	A3 : La grille n'est pas terminée. A partir du SN9.
+		Reprise au SN6.
+	A4 : La grille n'est pas validée, il y a des erreurs.
+		Reprise au SN6.
+	A5 : Le score n'est pas le meilleur. A partir du SN12.
+		Reprise au SN14.
+
