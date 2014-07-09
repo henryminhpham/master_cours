@@ -1,0 +1,13 @@
+Question 1
+
+Tous les processus dont le rang est différent de 0 sont les esclaves qui envoient un message au maître dont le rang est 0.
+
+Question 2
+
+L'affichage des messages se fait dans l'ordre de rang. Cela s'explique par le fait que le MPI_Recv prend comme valeur source, une valeur incréementée.
+Ainsi on tente de récupérer le message du processus 1, même s'il arrive après les autres. Et ainsi de suite.
+
+Question 3
+
+L'affichage des messages se fait dans l'ordre d'arrivée. Cela s'explique par le fait que MPI_ANY_SOURCE accepte tous les destinaires, donc
+premier arrivé premier servi.

@@ -1,0 +1,3 @@
+Question 2
+
+Tous les processus se bloquent en attente de la réponse. L'anneau se retrouvé bloqué car chaque noeud de l'anneau attend la réponse de son prédecesseur.

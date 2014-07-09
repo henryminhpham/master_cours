@@ -1,0 +1,3 @@
+Question 1
+
+Tous les processus dont le rang est différent de 0 sont les esclaves qui envoient un message au maître dont le rang est 0.

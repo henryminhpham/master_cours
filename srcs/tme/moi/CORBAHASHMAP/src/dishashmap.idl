@@ -1,0 +1,17 @@
+module dishashmap{
+	
+	interface Valeur{
+		Valeur get();
+		void set(in Valeur val);
+	};
+
+	interface hashmap_serv {
+		exception AlreadyExists {
+			string reason;
+		};
+		boolean containsKey (in string key);
+		Valeur get (in string key);
+		void set (in string key, in Valeur val) raises (AlreadyExists); 
+	};
+
+};
