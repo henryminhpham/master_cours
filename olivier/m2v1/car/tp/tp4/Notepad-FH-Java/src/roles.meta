@@ -1,0 +1,13 @@
+{
+	"features" : [
+		"Notepad",
+		"Cut",
+		"Undo",
+		"Notepad",
+		"Cut",
+		"Undo"
+	],
+	"roles": {
+	}
+
+}

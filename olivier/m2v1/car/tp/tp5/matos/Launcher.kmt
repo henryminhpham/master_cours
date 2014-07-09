@@ -1,0 +1,26 @@
+/* $Id:$ 
+ * Creation : October 20, 2010
+ * Licence  : EPL 
+ * Copyright:
+ * Authors  : 
+ *            Reda Bendraou
+ */
+@mainClass "turtle::Main"
+@mainOperation "main"
+
+//à customiser, mettre votre nom de package de plus haut niveau dans le turtle.ecore
+package turtle;
+
+
+require kermeta
+require "TurtleDynSemantics.kmt"
+require "Interpreter.kmt"
+
+class Main
+{
+	operation main() : Void is do 
+		var simulator : Interpreter init Interpreter.new
+		//à customiser, mettre le chemin vers vos modèles intances de turtle
+		simulator.execute("platform:/resource/org.lip6.fr.car.kermeta.tutorial.blank/metamodel/savedModel.xmi")
+	end
+}

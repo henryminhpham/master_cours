@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6B2CE6C1858D010009368CE /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B2CE6B1858D010009368CE /* TableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D6BF7B72185624D800B286F9 /* CellContent.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BF7B71185624D800B286F9 /* CellContent.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D6BF7B7518562A1900B286F9 /* myView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BF7B7418562A1900B286F9 /* myView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D6D5AFC7185612EA00F62851 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D5AFC6185612EA00F62851 /* Foundation.framework */; };
+		D6D5AFC9185612EA00F62851 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D5AFC8185612EA00F62851 /* CoreGraphics.framework */; };
+		D6D5AFCB185612EA00F62851 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D5AFCA185612EA00F62851 /* UIKit.framework */; };
+		D6D5AFD1185612EA00F62851 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6D5AFCF185612EA00F62851 /* InfoPlist.strings */; };
+		D6D5AFD3185612EA00F62851 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D5AFD2185612EA00F62851 /* main.m */; };
+		D6D5AFD7185612EA00F62851 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D5AFD6185612EA00F62851 /* AppDelegate.m */; };
+		D6D5AFDA185612EA00F62851 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D5AFD8185612EA00F62851 /* Main_iPhone.storyboard */; };
+		D6D5AFDD185612EA00F62851 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D5AFDB185612EA00F62851 /* Main_iPad.storyboard */; };
+		D6D5AFE0185612EA00F62851 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D5AFDF185612EA00F62851 /* ViewController1.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D6D5AFE2185612EA00F62851 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D5AFE1185612EA00F62851 /* Images.xcassets */; };
+		D6D5AFE9185612EA00F62851 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D5AFE8185612EA00F62851 /* XCTest.framework */; };
+		D6D5AFEA185612EA00F62851 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D5AFC6185612EA00F62851 /* Foundation.framework */; };
+		D6D5AFEB185612EA00F62851 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D5AFCA185612EA00F62851 /* UIKit.framework */; };
+		D6D5AFF3185612EA00F62851 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6D5AFF1185612EA00F62851 /* InfoPlist.strings */; };
+		D6D5AFF5185612EA00F62851 /* The_galaxy_traveler_guideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D5AFF4185612EA00F62851 /* The_galaxy_traveler_guideTests.m */; };
+		D6D5B0001856157300F62851 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D5AFFF1856157300F62851 /* ViewController2.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D6D5B007185620D700F62851 /* chatelet-elements in Resources */ = {isa = PBXBuildFile; fileRef = D6D5B006185620D700F62851 /* chatelet-elements */; };
+		D6EF7DEE1858BA16009C5769 /* PlanetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EF7DED1858BA16009C5769 /* PlanetViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D6EF7DF11858BAA6009C5769 /* PlanetView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EF7DF01858BAA6009C5769 /* PlanetView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6D5AFEC185612EA00F62851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6D5AFBB185612EA00F62851 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6D5AFC2185612EA00F62851;
+			remoteInfo = "The galaxy traveler guide";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D6B2CE6A1858D010009368CE /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		D6B2CE6B1858D010009368CE /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		D6BF7B70185624D800B286F9 /* CellContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellContent.h; sourceTree = "<group>"; };
+		D6BF7B71185624D800B286F9 /* CellContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellContent.m; sourceTree = "<group>"; };
+		D6BF7B7318562A1900B286F9 /* myView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myView.h; sourceTree = "<group>"; };
+		D6BF7B7418562A1900B286F9 /* myView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myView.m; sourceTree = "<group>"; };
+		D6D5AFC3185612EA00F62851 /* The galaxy traveler guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The galaxy traveler guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D5AFC6185612EA00F62851 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D6D5AFC8185612EA00F62851 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D6D5AFCA185612EA00F62851 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D6D5AFCE185612EA00F62851 /* The galaxy traveler guide-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "The galaxy traveler guide-Info.plist"; sourceTree = "<group>"; };
+		D6D5AFD0185612EA00F62851 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D6D5AFD2185612EA00F62851 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6D5AFD4185612EA00F62851 /* The galaxy traveler guide-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "The galaxy traveler guide-Prefix.pch"; sourceTree = "<group>"; };
+		D6D5AFD5185612EA00F62851 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D6D5AFD6185612EA00F62851 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D6D5AFD9185612EA00F62851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		D6D5AFDC185612EA00F62851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		D6D5AFDE185612EA00F62851 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		D6D5AFDF185612EA00F62851 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		D6D5AFE1185612EA00F62851 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D6D5AFE7185612EA00F62851 /* The galaxy traveler guideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The galaxy traveler guideTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D5AFE8185612EA00F62851 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D6D5AFF0185612EA00F62851 /* The galaxy traveler guideTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "The galaxy traveler guideTests-Info.plist"; sourceTree = "<group>"; };
+		D6D5AFF2185612EA00F62851 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D6D5AFF4185612EA00F62851 /* The_galaxy_traveler_guideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_galaxy_traveler_guideTests.m; sourceTree = "<group>"; };
+		D6D5AFFE1856157300F62851 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		D6D5AFFF1856157300F62851 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		D6D5B006185620D700F62851 /* chatelet-elements */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "chatelet-elements"; sourceTree = "<group>"; };
+		D6EF7DEC1858BA16009C5769 /* PlanetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanetViewController.h; sourceTree = "<group>"; };
+		D6EF7DED1858BA16009C5769 /* PlanetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanetViewController.m; sourceTree = "<group>"; };
+		D6EF7DEF1858BAA6009C5769 /* PlanetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanetView.h; sourceTree = "<group>"; };
+		D6EF7DF01858BAA6009C5769 /* PlanetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanetView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6D5AFC0185612EA00F62851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D5AFC9185612EA00F62851 /* CoreGraphics.framework in Frameworks */,
+				D6D5AFCB185612EA00F62851 /* UIKit.framework in Frameworks */,
+				D6D5AFC7185612EA00F62851 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6D5AFE4185612EA00F62851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D5AFE9185612EA00F62851 /* XCTest.framework in Frameworks */,
+				D6D5AFEB185612EA00F62851 /* UIKit.framework in Frameworks */,
+				D6D5AFEA185612EA00F62851 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6D5AFBA185612EA00F62851 = {
+			isa = PBXGroup;
+			children = (
+				D6D5AFCC185612EA00F62851 /* The galaxy traveler guide */,
+				D6D5AFEE185612EA00F62851 /* The galaxy traveler guideTests */,
+				D6D5AFC5185612EA00F62851 /* Frameworks */,
+				D6D5AFC4185612EA00F62851 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6D5AFC4185612EA00F62851 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5AFC3185612EA00F62851 /* The galaxy traveler guide.app */,
+				D6D5AFE7185612EA00F62851 /* The galaxy traveler guideTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6D5AFC5185612EA00F62851 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5AFC6185612EA00F62851 /* Foundation.framework */,
+				D6D5AFC8185612EA00F62851 /* CoreGraphics.framework */,
+				D6D5AFCA185612EA00F62851 /* UIKit.framework */,
+				D6D5AFE8185612EA00F62851 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6D5AFCC185612EA00F62851 /* The galaxy traveler guide */ = {
+			isa = PBXGroup;
+			children = (
+				D6B2CE6A1858D010009368CE /* TableViewController.h */,
+				D6B2CE6B1858D010009368CE /* TableViewController.m */,
+				D6BF7B70185624D800B286F9 /* CellContent.h */,
+				D6BF7B71185624D800B286F9 /* CellContent.m */,
+				D6D5AFD5185612EA00F62851 /* AppDelegate.h */,
+				D6D5AFD6185612EA00F62851 /* AppDelegate.m */,
+				D6EF7DEC1858BA16009C5769 /* PlanetViewController.h */,
+				D6EF7DED1858BA16009C5769 /* PlanetViewController.m */,
+				D6EF7DEF1858BAA6009C5769 /* PlanetView.h */,
+				D6EF7DF01858BAA6009C5769 /* PlanetView.m */,
+				D6D5AFD8185612EA00F62851 /* Main_iPhone.storyboard */,
+				D6D5AFDB185612EA00F62851 /* Main_iPad.storyboard */,
+				D6D5AFDE185612EA00F62851 /* ViewController1.h */,
+				D6D5AFDF185612EA00F62851 /* ViewController1.m */,
+				D6BF7B7318562A1900B286F9 /* myView.h */,
+				D6BF7B7418562A1900B286F9 /* myView.m */,
+				D6D5AFFE1856157300F62851 /* ViewController2.h */,
+				D6D5AFFF1856157300F62851 /* ViewController2.m */,
+				D6D5AFE1185612EA00F62851 /* Images.xcassets */,
+				D6D5AFCD185612EA00F62851 /* Supporting Files */,
+			);
+			path = "The galaxy traveler guide";
+			sourceTree = "<group>";
+		};
+		D6D5AFCD185612EA00F62851 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5B006185620D700F62851 /* chatelet-elements */,
+				D6D5AFCE185612EA00F62851 /* The galaxy traveler guide-Info.plist */,
+				D6D5AFCF185612EA00F62851 /* InfoPlist.strings */,
+				D6D5AFD2185612EA00F62851 /* main.m */,
+				D6D5AFD4185612EA00F62851 /* The galaxy traveler guide-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6D5AFEE185612EA00F62851 /* The galaxy traveler guideTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5AFF4185612EA00F62851 /* The_galaxy_traveler_guideTests.m */,
+				D6D5AFEF185612EA00F62851 /* Supporting Files */,
+			);
+			path = "The galaxy traveler guideTests";
+			sourceTree = "<group>";
+		};
+		D6D5AFEF185612EA00F62851 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6D5AFF0185612EA00F62851 /* The galaxy traveler guideTests-Info.plist */,
+				D6D5AFF1185612EA00F62851 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6D5AFC2185612EA00F62851 /* The galaxy traveler guide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6D5AFF8185612EA00F62851 /* Build configuration list for PBXNativeTarget "The galaxy traveler guide" */;
+			buildPhases = (
+				D6D5AFBF185612EA00F62851 /* Sources */,
+				D6D5AFC0185612EA00F62851 /* Frameworks */,
+				D6D5AFC1185612EA00F62851 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The galaxy traveler guide";
+			productName = "The galaxy traveler guide";
+			productReference = D6D5AFC3185612EA00F62851 /* The galaxy traveler guide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6D5AFE6185612EA00F62851 /* The galaxy traveler guideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6D5AFFB185612EA00F62851 /* Build configuration list for PBXNativeTarget "The galaxy traveler guideTests" */;
+			buildPhases = (
+				D6D5AFE3185612EA00F62851 /* Sources */,
+				D6D5AFE4185612EA00F62851 /* Frameworks */,
+				D6D5AFE5185612EA00F62851 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6D5AFED185612EA00F62851 /* PBXTargetDependency */,
+			);
+			name = "The galaxy traveler guideTests";
+			productName = "The galaxy traveler guideTests";
+			productReference = D6D5AFE7185612EA00F62851 /* The galaxy traveler guideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6D5AFBB185612EA00F62851 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = m2sar;
+				TargetAttributes = {
+					D6D5AFE6185612EA00F62851 = {
+						TestTargetID = D6D5AFC2185612EA00F62851;
+					};
+				};
+			};
+			buildConfigurationList = D6D5AFBE185612EA00F62851 /* Build configuration list for PBXProject "The galaxy traveler guide" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6D5AFBA185612EA00F62851;
+			productRefGroup = D6D5AFC4185612EA00F62851 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6D5AFC2185612EA00F62851 /* The galaxy traveler guide */,
+				D6D5AFE6185612EA00F62851 /* The galaxy traveler guideTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6D5AFC1185612EA00F62851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D5AFDD185612EA00F62851 /* Main_iPad.storyboard in Resources */,
+				D6D5AFE2185612EA00F62851 /* Images.xcassets in Resources */,
+				D6D5B007185620D700F62851 /* chatelet-elements in Resources */,
+				D6D5AFDA185612EA00F62851 /* Main_iPhone.storyboard in Resources */,
+				D6D5AFD1185612EA00F62851 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6D5AFE5185612EA00F62851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D5AFF3185612EA00F62851 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6D5AFBF185612EA00F62851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D5AFE0185612EA00F62851 /* ViewController1.m in Sources */,
+				D6BF7B72185624D800B286F9 /* CellContent.m in Sources */,
+				D6BF7B7518562A1900B286F9 /* myView.m in Sources */,
+				D6B2CE6C1858D010009368CE /* TableViewController.m in Sources */,
+				D6EF7DF11858BAA6009C5769 /* PlanetView.m in Sources */,
+				D6D5B0001856157300F62851 /* ViewController2.m in Sources */,
+				D6EF7DEE1858BA16009C5769 /* PlanetViewController.m in Sources */,
+				D6D5AFD7185612EA00F62851 /* AppDelegate.m in Sources */,
+				D6D5AFD3185612EA00F62851 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6D5AFE3185612EA00F62851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D5AFF5185612EA00F62851 /* The_galaxy_traveler_guideTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6D5AFED185612EA00F62851 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6D5AFC2185612EA00F62851 /* The galaxy traveler guide */;
+			targetProxy = D6D5AFEC185612EA00F62851 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6D5AFCF185612EA00F62851 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6D5AFD0185612EA00F62851 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D6D5AFD8185612EA00F62851 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6D5AFD9185612EA00F62851 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		D6D5AFDB185612EA00F62851 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6D5AFDC185612EA00F62851 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		D6D5AFF1185612EA00F62851 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6D5AFF2185612EA00F62851 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6D5AFF6185612EA00F62851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6D5AFF7185612EA00F62851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6D5AFF9185612EA00F62851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "The galaxy traveler guide/The galaxy traveler guide-Prefix.pch";
+				INFOPLIST_FILE = "The galaxy traveler guide/The galaxy traveler guide-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D6D5AFFA185612EA00F62851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "The galaxy traveler guide/The galaxy traveler guide-Prefix.pch";
+				INFOPLIST_FILE = "The galaxy traveler guide/The galaxy traveler guide-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D6D5AFFC185612EA00F62851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/The galaxy traveler guide.app/The galaxy traveler guide";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "The galaxy traveler guide/The galaxy traveler guide-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "The galaxy traveler guideTests/The galaxy traveler guideTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D6D5AFFD185612EA00F62851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/The galaxy traveler guide.app/The galaxy traveler guide";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "The galaxy traveler guide/The galaxy traveler guide-Prefix.pch";
+				INFOPLIST_FILE = "The galaxy traveler guideTests/The galaxy traveler guideTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6D5AFBE185612EA00F62851 /* Build configuration list for PBXProject "The galaxy traveler guide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6D5AFF6185612EA00F62851 /* Debug */,
+				D6D5AFF7185612EA00F62851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6D5AFF8185612EA00F62851 /* Build configuration list for PBXNativeTarget "The galaxy traveler guide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6D5AFF9185612EA00F62851 /* Debug */,
+				D6D5AFFA185612EA00F62851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6D5AFFB185612EA00F62851 /* Build configuration list for PBXNativeTarget "The galaxy traveler guideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6D5AFFC185612EA00F62851 /* Debug */,
+				D6D5AFFD185612EA00F62851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6D5AFBB185612EA00F62851 /* Project object */;
+}

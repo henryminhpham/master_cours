@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and abstract="true" mandatory="true" name="MartzerMobile">
+				<and name="Base">
+					<feature mandatory="true" name="Call"/>
+					<feature mandatory="true" name="Message"/>
+					<feature mandatory="true" name="Alarme"/>
+					<feature name="Games"/>
+					<alt mandatory="true" name="OS">
+						<feature mandatory="true" name="IOS"/>
+						<and mandatory="true" name="Android">
+							<feature name="JRE"/>
+						</and>
+					</alt>
+					<or name="Multimedia">
+						<feature mandatory="true" name="MP4"/>
+						<feature mandatory="true" name="MP3"/>
+						<feature mandatory="true" name="Camera"/>
+					</or>
+					<or name="Connectivity">
+						<feature mandatory="true" name="WIFI"/>
+						<feature mandatory="true" name="Bluetooth"/>
+						<feature mandatory="true" name="USB"/>
+					</or>
+				</and>
+			</and>
+		</struct>
+		<constraints>
+			<rule>
+				<imp>
+					<var>Games</var>
+					<var>JRE</var>
+				</imp>
+			</rule>
+		</constraints>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>

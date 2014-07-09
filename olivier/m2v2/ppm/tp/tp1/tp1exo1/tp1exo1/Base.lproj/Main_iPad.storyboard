@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="heh-lh-pxQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="j9A-rW-F7a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syc-vI-iPz">
+                                <rect key="frame" x="350" y="468" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="LgU-bP-QNw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Yl-KD-6Bd">
+                                <rect key="frame" x="320" y="497" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="2Kg-b3-KIj"/>
+                                </constraints>
+                                <state key="normal" title="DisBonjour">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hBR-kE-j3o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j9A-rW-F7a" firstAttribute="top" secondItem="7Yl-KD-6Bd" secondAttribute="bottom" constant="497" id="QSn-xU-4Vq"/>
+                            <constraint firstItem="7Yl-KD-6Bd" firstAttribute="top" secondItem="Syc-vI-iPz" secondAttribute="bottom" constant="8" symbolic="YES" id="bcI-vE-pcV"/>
+                            <constraint firstItem="Syc-vI-iPz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cUz-2X-gbq"/>
+                            <constraint firstItem="7Yl-KD-6Bd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fOA-02-Xmv"/>
+                            <constraint firstItem="Syc-vI-iPz" firstAttribute="top" secondItem="heh-lh-pxQ" secondAttribute="bottom" constant="448" id="igi-Xm-F0c"/>
+                            <constraint firstItem="7Yl-KD-6Bd" firstAttribute="centerX" secondItem="Syc-vI-iPz" secondAttribute="centerX" id="o2C-6S-g6T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="7Yl-KD-6Bd" id="0kr-Nt-xzY"/>
+                        <outlet property="label" destination="Syc-vI-iPz" id="Tlk-U6-fCP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

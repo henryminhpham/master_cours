@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i7W-xl-aFE"/>
+                        <viewControllerLayoutGuide type="bottom" id="6oN-mj-SLG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUo-6q-CQ6">
+                                <rect key="frame" x="120" y="269" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="LdE-b3-TyN"/>
+                                </constraints>
+                                <state key="normal" title="DisBonjour">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jHB-42-UNP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfk-O8-KHt">
+                                <rect key="frame" x="126" y="240" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="uFK-4F-6dF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GUo-6q-CQ6" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="FUM-Wh-Gvb"/>
+                            <constraint firstItem="6oN-mj-SLG" firstAttribute="top" secondItem="GUo-6q-CQ6" secondAttribute="bottom" constant="269" id="Lv0-hx-cBC"/>
+                            <constraint firstItem="mfk-O8-KHt" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="PcX-Qk-Yyt"/>
+                            <constraint firstItem="GUo-6q-CQ6" firstAttribute="centerX" secondItem="mfk-O8-KHt" secondAttribute="centerX" id="TcX-wR-vH4"/>
+                            <constraint firstItem="GUo-6q-CQ6" firstAttribute="top" secondItem="mfk-O8-KHt" secondAttribute="bottom" constant="8" symbolic="YES" id="ZpA-AH-Jkf"/>
+                            <constraint firstItem="mfk-O8-KHt" firstAttribute="top" secondItem="i7W-xl-aFE" secondAttribute="bottom" constant="220" id="q7e-yl-v4c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="GUo-6q-CQ6" id="Vgq-od-biS"/>
+                        <outlet property="label" destination="mfk-O8-KHt" id="IVK-TP-Now"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

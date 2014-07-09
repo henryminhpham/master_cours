@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I7X-cs-114"/>
+                        <viewControllerLayoutGuide type="bottom" id="csg-Ye-ETw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n16-KZ-bf5">
+                                <rect key="frame" x="137" y="260" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="WOY-XT-p9D"/>
+                                </constraints>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Sbg-bQ-Q7M"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="jcT-UC-qkk">
+                                <rect key="frame" x="18" y="219" width="284" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="slideAction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="O6B-Yt-AZj"/>
+                                </connections>
+                            </slider>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="C6V-Nd-ray">
+                                <rect key="frame" x="20" y="148" width="280" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="0"/>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                    <segment title="7"/>
+                                    <segment title="8"/>
+                                    <segment title="9"/>
+                                </segments>
+                                <connections>
+                                    <action selector="uniteAction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="1Zi-i3-Qgc"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="g8j-bj-9Jz">
+                                <rect key="frame" x="20" y="83" width="280" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="0"/>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                    <segment title="7"/>
+                                    <segment title="8"/>
+                                    <segment title="9"/>
+                                </segments>
+                                <connections>
+                                    <action selector="dizaineAction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="1LZ-AO-JsS"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unités" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8s2-J3-ZiQ">
+                                <rect key="frame" x="136" y="119" width="49" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dizaines" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAN-6R-AWh">
+                                <rect key="frame" x="128" y="54" width="65" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBp-Oi-LPG">
+                                <rect key="frame" x="135" y="190" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3IA-PM-hia">
+                                <rect key="frame" x="251" y="21" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="geekMode:" destination="vXZ-lx-hvc" eventType="valueChanged" id="6I9-PV-sru"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geek Mode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wp9-SV-6VL">
+                                <rect key="frame" x="153" y="25" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="99" translatesAutoresizingMaskIntoConstraints="NO" id="YBW-sJ-jqY">
+                                <rect key="frame" x="20" y="21" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="stepperAction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="ZGo-Bp-4cw"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jcT-UC-qkk" firstAttribute="centerX" secondItem="n16-KZ-bf5" secondAttribute="centerX" id="0wD-tu-Rzb"/>
+                            <constraint firstItem="C6V-Nd-ray" firstAttribute="trailing" secondItem="jcT-UC-qkk" secondAttribute="trailing" id="3QN-ni-Z62"/>
+                            <constraint firstAttribute="trailing" secondItem="3IA-PM-hia" secondAttribute="trailing" constant="20" symbolic="YES" id="3sn-7b-HDp"/>
+                            <constraint firstItem="8s2-J3-ZiQ" firstAttribute="centerX" secondItem="g8j-bj-9Jz" secondAttribute="centerX" id="7bo-9B-9bb"/>
+                            <constraint firstItem="XAN-6R-AWh" firstAttribute="top" secondItem="wp9-SV-6VL" secondAttribute="bottom" constant="8" symbolic="YES" id="Bg0-jY-hcH"/>
+                            <constraint firstItem="g8j-bj-9Jz" firstAttribute="centerX" secondItem="XAN-6R-AWh" secondAttribute="centerX" id="Cl8-Ff-u8g"/>
+                            <constraint firstItem="YBW-sJ-jqY" firstAttribute="leading" secondItem="g8j-bj-9Jz" secondAttribute="leading" id="K4b-XM-cro"/>
+                            <constraint firstItem="3IA-PM-hia" firstAttribute="leading" secondItem="wp9-SV-6VL" secondAttribute="trailing" constant="8" symbolic="YES" id="LhT-YA-z7J"/>
+                            <constraint firstItem="g8j-bj-9Jz" firstAttribute="leading" secondItem="C6V-Nd-ray" secondAttribute="leading" id="UxO-Au-rHo"/>
+                            <constraint firstItem="YBW-sJ-jqY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="WBt-6N-9k0"/>
+                            <constraint firstItem="n16-KZ-bf5" firstAttribute="top" secondItem="jcT-UC-qkk" secondAttribute="bottom" constant="8" symbolic="YES" id="WFA-tl-ir1"/>
+                            <constraint firstItem="C6V-Nd-ray" firstAttribute="leading" secondItem="jcT-UC-qkk" secondAttribute="leading" id="Weg-lO-cAI"/>
+                            <constraint firstItem="C6V-Nd-ray" firstAttribute="top" secondItem="8s2-J3-ZiQ" secondAttribute="bottom" constant="8" symbolic="YES" id="bHA-Br-p4a"/>
+                            <constraint firstItem="YBW-sJ-jqY" firstAttribute="top" secondItem="3IA-PM-hia" secondAttribute="top" id="cZt-n6-oLQ"/>
+                            <constraint firstItem="3IA-PM-hia" firstAttribute="trailing" secondItem="g8j-bj-9Jz" secondAttribute="trailing" id="f0v-kF-nge"/>
+                            <constraint firstItem="LBp-Oi-LPG" firstAttribute="top" secondItem="C6V-Nd-ray" secondAttribute="bottom" constant="14" id="hOJ-c6-gPB"/>
+                            <constraint firstItem="C6V-Nd-ray" firstAttribute="trailing" secondItem="g8j-bj-9Jz" secondAttribute="trailing" id="llx-8N-Y75"/>
+                            <constraint firstItem="jcT-UC-qkk" firstAttribute="top" secondItem="LBp-Oi-LPG" secondAttribute="bottom" constant="8" symbolic="YES" id="qWp-wd-xB7"/>
+                            <constraint firstItem="YBW-sJ-jqY" firstAttribute="centerY" secondItem="wp9-SV-6VL" secondAttribute="centerY" id="qzT-g4-fmk"/>
+                            <constraint firstItem="LBp-Oi-LPG" firstAttribute="trailing" secondItem="8s2-J3-ZiQ" secondAttribute="trailing" id="tb0-1E-X5z"/>
+                            <constraint firstItem="8s2-J3-ZiQ" firstAttribute="top" secondItem="g8j-bj-9Jz" secondAttribute="bottom" constant="8" symbolic="YES" id="u0x-xj-pgt"/>
+                            <constraint firstItem="g8j-bj-9Jz" firstAttribute="top" secondItem="XAN-6R-AWh" secondAttribute="bottom" constant="8" symbolic="YES" id="uoC-HG-Sh2"/>
+                            <constraint firstItem="jcT-UC-qkk" firstAttribute="centerX" secondItem="LBp-Oi-LPG" secondAttribute="centerX" id="wQ7-QR-fWH"/>
+                            <constraint firstItem="YBW-sJ-jqY" firstAttribute="top" secondItem="I7X-cs-114" secondAttribute="bottom" constant="1" id="yrS-lz-dLG"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="dizaine" destination="g8j-bj-9Jz" id="EBv-mA-Dxf"/>
+                        <outlet property="geek" destination="3IA-PM-hia" id="f3L-9F-M0E"/>
+                        <outlet property="label" destination="LBp-Oi-LPG" id="NH2-ZS-y7t"/>
+                        <outlet property="slide" destination="jcT-UC-qkk" id="I9E-rZ-csf"/>
+                        <outlet property="stepper" destination="YBW-sJ-jqY" id="EOX-Nb-CWG"/>
+                        <outlet property="unite" destination="C6V-Nd-ray" id="Tsl-4v-wXQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
