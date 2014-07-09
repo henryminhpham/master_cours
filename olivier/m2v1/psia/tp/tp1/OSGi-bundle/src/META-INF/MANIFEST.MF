@@ -1,4 +1,0 @@
-Bundle-Activator: test.Test
-Bundle-Version: 1.0
-Bundle-Name: BundleTest
-Bundle-Vendor: Olivier Pitton
